@@ -5,76 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+  <div id="main-container">
 
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<div id="report-header">
+  <div id="profile">
+    <img src="./images/image-jeremy.png" alt="Photo of Jeremy Robson">
+    <p>Report for</p>
+    <h2>Jeremy Robson</h2>
   </div>
+
+  <div id="time-window">
+    <p class="active" id="daily">Daily</p>
+    <p id="weekly">Weekly</p>
+    <p id="monthly">Monthly</p>
+  </div>
+</div>
+
+  <div id="work" class="time-category">
+    <div class="icon-container" id="work-icon-container">
+      <img src="/images/icon-work.svg" alt="Work icon">
+    </div>
+    <div class="label-group">
+      <p class="category-header">Work</p>
+      <img src="/images/icon-ellipsis.svg" alt="ellipsis">
+    </div>
+    <h1 class="daily-time">5hrs</h1> <!-- daily -->
+    <p class="previous">Yesterday - 7hrs</p><!-- daily -->
+    <h1 class="weekly-time">32hrs</h1> <!-- weekly -->
+    <p class="previous">Week - 36hrs</p><!-- weekly -->
+    <h1 class="monthly-time">103hrs</h1> <!-- monthly -->
+    <p class="previous">Last Month - 128hrs</p> <!-- monthly -->
+  </div>
+
+  <div id="play" class="time-category">
+    <div class="icon-container" id="play-icon-container">
+      <img src="/images/icon-play.svg" alt="play icon">
+    </div>
+    <div class="label-group">
+      <p class="category-header">Play</p>
+      <img src="/images/icon-ellipsis.svg" alt="ellipsis">
+    </div>
+    <h1 class="daily-time">1hr</h1> <!-- daily -->
+    <p class="previous">Yesterday - 2hrs</p> <!-- daily -->
+    <h1 class="weekly-time">10hrs</h1> <!-- weekly -->
+    <p class="previous">Last Week - 8hrs</p> <!-- weekly -->
+    <h1 class="monthly-time">23hrs</h1> <!-- monthly -->
+    <p class="previous">Last Month - 29hrs</p> <!-- monthly -->
+  </div>
+
+  <div id="study" class="time-category">
+    <div class="icon-container" id="study-icon-container">
+      <img src="/images/icon-study.svg" alt="study icon">
+    </div>
+    <div class="label-group">
+      <p class="category-header">Study</p>
+      <img src="/images/icon-ellipsis.svg" alt="ellipsis">
+    </div>
+    <h1 class="daily-time">0hrs</h1> <!-- daily -->
+    <p class="previous">Yesterday - 1hr</p> <!-- daily -->
+    <h1 class="weekly-time">4hrs</h1> <!-- weekly -->
+    <p class="previous">Last Week - 7hrs</p> <!-- weekly -->
+    <h1 class="monthly-time">13hrs</h1> <!-- monthly -->
+    <p class="previous">Last Month - 19hrs</p> <!-- monthly -->
+  </div>
+
+  <div id="excercise" class="time-category">
+    <div class="icon-container" id="exercise-icon-container">
+      <img src="/images/icon-exercise.svg" alt="exercise icon">
+    </div>
+    <div class="label-group">
+      <p class="category-header">Exercise</p>
+      <img src="/images/icon-ellipsis.svg" alt="ellipsis">
+    </div>
+    <h1 class="daily-time">1hr</h1> <!-- daily -->
+    <p class="previous">Yesterday - 1hr</p> <!-- daily -->
+    <h1 class="weekly-time">4hrs</h1> <!-- weekly -->
+    <p class="previous">Last Week - 5hrs</p> <!-- weekly -->
+    <h1 class="monthly-time">11hrs</h1> <!-- monthly -->
+    <p class="previous">Last Month - 18hrs</p> <!-- monthly -->
+  </div>
+
+  <div id="social" class="time-category">
+    <div class="icon-container" id="social-icon-container">
+      <img src="/images/icon-social.svg" alt="social icon">
+    </div>
+    <div class="label-group">
+      <p class="category-header">Social</p>
+      <img src="/images/icon-ellipsis.svg" alt="ellipsis">
+    </div>
+    <h1 class="daily-time">1hr</h1> <!-- daily -->
+    <p class="previous">Yesterday - 3hrs</p> <!-- daily -->
+    <h1 class="weekly-time">5hrs</h1> <!-- weekly -->
+    <p class="previous">Last Week - 10hrs</p> <!-- weekly -->
+    <h1 class="monthly-time">21hrs</h1> <!-- monthly -->
+    <p class="previous">Last Month - 23hrs <!-- monthly --></p>
+  </div>
+
+  <div id="self-care" class="time-category">
+    <div class="icon-container" id="self-care-icon-container">
+      <img src="/images/icon-self-care.svg" alt="self-care icon">
+    </div>
+    <div class="label-group">
+      <p class="category-header">Self Care</p>
+      <img src="/images/icon-ellipsis.svg" alt="ellipsis">
+    </div>
+    <h1 class="daily-time">0hrs</h1> <!-- daily -->
+    <p class="previous">Yesterday - 1hr</p> <!-- daily -->
+    <h1 class="weekly-time">2hrs</h1> <!-- weekly -->
+    <p class="previous">Last Week - 2hrs</p> <!-- weekly -->
+    <h1 class="monthly-time">7hrs</h1> <!-- monthly -->
+    <p class="previous">Last Month - 11hrs</p> <!-- monthly -->
+  </div>
+</div>
+
+<script src="/index.js"></script>
+
 </body>
 </html>
