@@ -37,13 +37,38 @@ body {
     row-gap: 2rem;
 }
 
+.hidden {
+    display: none;
+}
+
 #report-header {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    width: 15vw;
 }
 
 #profile {
     border-radius: 10px;
+    padding: 2rem;
+}
+
+#profile img {
+    width: 33%;
+    border-width: 3px;
+    border-color: var(--white);
+    border-style: solid;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+#profile p {
+    color: var(--pale-blue);
+}
+
+#profile h2 {
+    font-weight: 100;
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 #work {
@@ -89,6 +114,10 @@ body {
     color: var(--soft-purple);
 }
 
+#time-window p:hover {
+    cursor: pointer;
+}
+
 #time-window .active {
     color: var(--white);
 }
@@ -96,6 +125,7 @@ body {
 .time-category {
     background-color: var(--dark-blue);
     border-radius: 10px;
+    width: 15vw;
 }
 
 .icon-container {
