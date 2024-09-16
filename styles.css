@@ -220,6 +220,7 @@ body {
 
     #report-header {
         width: 90vw;
+        margin-bottom: 10vh;
     }
 
     #profile {
@@ -228,12 +229,15 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+        gap: 1rem;
         padding: 1rem;
     }
     
     #main-container {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
 
     #time-window {
