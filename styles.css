@@ -35,6 +35,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
+    height: 65vh;
 }
 
 .hidden {
@@ -45,6 +46,7 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     width: 12vw;
+    height: 65vh;
     position: relative;
 }
 
@@ -117,9 +119,10 @@ body {
     gap: 0.8rem;
     border-radius: 0px 0px 10px 10px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     z-index: 0;
     width: 18vw;
+    height: 30%;
 }
 
 #time-window p {
@@ -177,6 +180,7 @@ body {
     top: 20%;
     background-color: var(--dark-blue);
     border-radius: 10px;
+    height: 80%;
 }
 
 .label-group {
